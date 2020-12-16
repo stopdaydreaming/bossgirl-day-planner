@@ -44,6 +44,64 @@
 // THEN the saved events persist
 // ```
 
+var todaysDate = $("#currentDay");
+todaysDate.text(moment().format("dddd, MMMM, Do YYYY"));
+
+var currTime = (moment().format('HH'));
+// console.log(currTime);
+
+var timeOfDay = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
+
+for (var i = 0; i < timeOfDay.length; i++ ){
+    var row = $("<div>");
+    row.addClass("row time-block");
+    
+        // 3 steps again for hours
+        var hour = $("<div>");
+        hour.text(timeOfDay[i]);
+        hour.addClass("hour col-1");
+        row.append(hour);
+        //compare hour to current time of day, loop (ex: 9 < 15, 'past' class)
+        //
+        //if statement
+    
+        // 3 steps again for text area
+        var textArea = $("<textarea>"); 
+        textArea.addClass("past description col-10");
+        row.append(textArea);
+
+        // 3 steps again for button
+        var button = $("<button>");
+        button.addClass("saveBtn col-1");
+        button.on("click", saveEvent);
+        row.append(button);
+    
+    $(".container").append(row);
+}
+
+function saveEvent() {
+    // console.log("saved");
+    
+    // get hour value from sibling element
+        // look at current element clicked
+        var hour = $(this)
+        // get the sibling element that is the hour block
+        .siblings(".hour")
+        // get text value from hour block div
+        .text();
+        // console.log(hour);
+    // get text area value from sibling element
+        // look at current element clicked
+        // get the sibling element that is the text area
+        // get text value from text area
+        var textArea = $(this).siblings(".description").val();
+        // console.log(textArea);
+    //
+    localStorage.setItem(hour, textArea);
+}
+
+
+
 
 
 
