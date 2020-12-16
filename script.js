@@ -43,40 +43,42 @@
 // WHEN I refresh the page
 // THEN the saved events persist
 // ```
+// var btnIcon = "<i class="far fa-save"></i>"
 
-var todaysDate = $("#currentDay");
-todaysDate.text(moment().format("dddd, MMMM, Do YYYY"));
+var todaysDate = $('#currentDay');
+todaysDate.text(moment().format('dddd, MMMM, Do YYYY'));
 
 var currTime = (moment().format('HH'));
 // console.log(currTime);
 
-var timeOfDay = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
+var timeOfDay = ['9', '10', '11', '12', '13', '14', '15', '16', '17'];
 
 for (var i = 0; i < timeOfDay.length; i++ ){
-    var row = $("<div>");
-    row.addClass("row time-block");
+    var row = $('<div>');
+    row.addClass('row time-block');
     
         // 3 steps again for hours
-        var hour = $("<div>");
+        var hour = $('<div>');
         hour.text(timeOfDay[i]);
-        hour.addClass("hour col-1");
+        hour.addClass('hour col-1');
         row.append(hour);
         //compare hour to current time of day, loop (ex: 9 < 15, 'past' class)
         //
         //if statement
     
         // 3 steps again for text area
-        var textArea = $("<textarea>"); 
-        textArea.addClass("past description col-10");
+        var textArea = $('<textarea>'); 
+        textArea.addClass('past description col-10');
         row.append(textArea);
 
         // 3 steps again for button
-        var button = $("<button>");
-        button.addClass("saveBtn col-1");
-        button.on("click", saveEvent);
+        var button = $('<button>');
+        button.append('<i class="far fa-save fa-2x"></i>');
+        button.addClass('saveBtn col-1');
+        button.on('click', saveEvent);
         row.append(button);
     
-    $(".container").append(row);
+    $('.container').append(row);
 }
 
 function saveEvent() {
