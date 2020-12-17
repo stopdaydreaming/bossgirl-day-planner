@@ -36,7 +36,7 @@ for (var i = 0; i < timeOfDay.length; i++ ){
     row.append(textArea);
 
     var button = $('<button>');
-    button.append('<i class="far fa-save fa-2x"></i>');
+    button.append('<i class="fas fa-save fa-2x"></i>');
     button.addClass('saveBtn col-1');
     button.on('click', saveEvent);
     row.append(button);
