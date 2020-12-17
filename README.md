@@ -1,6 +1,4 @@
-# bossgirl-day-planner
-
-# The Coding Quiz 🤓
+# Boss Girl Day Planner 💅
 
 ## Description 
 A simple calendar application that allows a user to save events for each hour of the day.
@@ -30,7 +28,7 @@ This code should be used for the purpose of creating/editing code for a simple c
 ![scheduler](./assets/demo-planner.gif)
 
 ## View Website
-Click here to view the live website [VIEW SITE](https://stopdaydreaming.github.io/super-coding-quiz/)
+Click here to view the live website [VIEW SITE](https://stopdaydreaming.github.io/bossgirl-day-planner/)
 
 
 ## Credits
@@ -38,7 +36,7 @@ Click here to view the live website [VIEW SITE](https://stopdaydreaming.github.i
 Special thanks to the study groups
 
 ## License
-Copyright (c) Coding Quiz. All rights reserved.
+Copyright (c) Boss Girl Day Planner. All rights reserved.
 Licensed under the [MIT](license.txt) license.
 
 ## Features
@@ -51,10 +49,4 @@ None at this time
 None at this time  
 
 ## Badges
-<!-- ![badmath](https://img.shields.io/github/issues/stopdaydreaming/super-coding-quiz)  
-![badmath](https://img.shields.io/github/forks/stopdaydreaming/super-coding-quiz)  
-![badmath](https://img.shields.io/github/stars/stopdaydreaming/super-coding-quiz)  
-![badmath](https://img.shields.io/github/license/stopdaydreaming/super-coding-quiz)  
-![badmath](https://img.shields.io/badge/JS-47.6%25-yellow)   
-![badmath](https://img.shields.io/badge/HTML-46.1%25-red)  
-![badmath](https://img.shields.io/badge/CSS-6.3%25-purple)   -->
+Coming soon
