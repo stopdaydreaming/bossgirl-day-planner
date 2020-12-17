@@ -59,6 +59,8 @@ function saveEvent() {
 
 function colorCalendar() {
     console.log("change event colors");
+    //.present, red
+    //.future, green
 }
 
 
