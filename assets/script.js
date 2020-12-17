@@ -64,23 +64,15 @@ function saveEvent() {
         .val();
 
     localStorage.setItem(hour, textArea);
-    // colorCalendar();
+
+    //if text area has content show content
+    if(localStorage.getItem(hours[i]) !== null) {
+        var saveEventData = localStorage.getItem(hours[i]);
+        textArea.text(saveEventData);
+    }
+
 }
 
-// function colorCalendar() {
-//     console.log("change event colors");
-//     //.present, red
-//     //.future, green
-//     if(timeOfDay[i] == moment().hour()){
-//         $(hour).addClass(".present");
-//     }
-//     else if(i < moment().hour()){
-//         $(hour).addClass(".past");
-//     } 
-//     else{
-//         $(hour).addClass(".future");
-//     }
-// }
 
 
 
