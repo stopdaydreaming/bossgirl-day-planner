@@ -42,6 +42,16 @@ for (var i = 0; i < timeOfDay.length; i++ ){
     row.append(button);
     
     $('.container').append(row);
+
+    if(timeOfDay[i] == moment().hour()){
+        $(hour).addClass(".present");
+    }
+    else if(i < moment().hour()){
+        $(hour).addClass(".past");
+    } 
+    else{
+        $(hour).addClass(".future");
+    }
 }
 
 function saveEvent() {
@@ -54,14 +64,23 @@ function saveEvent() {
         .val();
 
     localStorage.setItem(hour, textArea);
-    colorCalendar();
+    // colorCalendar();
 }
 
-function colorCalendar() {
-    console.log("change event colors");
-    //.present, red
-    //.future, green
-}
+// function colorCalendar() {
+//     console.log("change event colors");
+//     //.present, red
+//     //.future, green
+//     if(timeOfDay[i] == moment().hour()){
+//         $(hour).addClass(".present");
+//     }
+//     else if(i < moment().hour()){
+//         $(hour).addClass(".past");
+//     } 
+//     else{
+//         $(hour).addClass(".future");
+//     }
+// }
 
 
 
