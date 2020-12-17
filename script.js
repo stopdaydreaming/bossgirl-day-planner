@@ -17,17 +17,16 @@
 var todaysDate = $('#currentDay');
 todaysDate.text(moment().format('dddd, MMMM, Do YYYY'));
 
-var currHour = (moment().format('HH'));
+var currHour = (moment().format('hA'));
 
-var timeOfDay = ['9', '10', '11', '12', '13', '14', '15', '16', '17'];
+var timeOfDay = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 
 for (var i = 0; i < timeOfDay.length; i++ ){
     var row = $('<div>');
     row.addClass('row time-block');
-    
     var hour = $('<div>');
-    hour.text(timeOfDay[i]);
-    // var h = timeOfDay[i];
+    var hourDisplay = moment().set("hour", timeOfDay[i]).format("hA");
+    hour.text(hourDisplay);
 
     hour.addClass('hour col-1 mt-1');
     row.append(hour);
@@ -59,18 +58,7 @@ function saveEvent() {
 }
 
 function colorCalendar() {
-    console.log("hour being passed: ");
-    // console.log("current hour: " + currHour);
-
-    // if(h >= currHour) {
-    //     console.log("big")
-    // }
-    // else if (h == currHour) {
-    //     console.log("equal")
-    // }
-    // else if (h <= currHour) {
-    //     console.log("small")
-    // }
+    console.log("change event colors");
 }
 
 
