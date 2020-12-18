@@ -49,4 +49,10 @@ None at this time
 None at this time  
 
 ## Badges
-Coming soon
+![badmath](https://img.shields.io/github/issues/stopdaydreaming/bossgirl-day-planner)  
+![badmath](https://img.shields.io/github/forks/stopdaydreaming/bossgirl-day-planner)  
+![badmath](https://img.shields.io/github/stars/stopdaydreaming/bossgirl-day-planner)  
+![badmath](https://img.shields.io/github/license/stopdaydreaming/bossgirl-day-planner)  
+![badmath](https://img.shields.io/badge/JS-36.4%25-yellow)   
+![badmath](https://img.shields.io/badge/HTML-35.0%25-red)  
+![badmath](https://img.shields.io/badge/CSS-28.6%25-purple)
